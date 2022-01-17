@@ -14,19 +14,19 @@ ____________________________________________________
 
 Providers:
 ========
-AWS	3.72.0
-Kubernetes	2.7.0
+1. AWS	3.72.0
+2. Kubernetes	2.7.0
 
 Modules:
 ========
-eks 18.2.0
-vpc 3.11.3
+1. eks 18.2.0
+2. vpc 3.11.3
 
 Data Sources:
 =============
-aws_availability_zones : 
-aws_eks_cluster :
-aws_eks_cluster_auth :
+1. aws_availability_zones : The Availability Zones data source allows access to the list of AWS Availability Zones which can be accessed by an AWS account within the region     configured in the provider.
+2. aws_eks_cluster : Retrieve information about an EKS Cluster
+3. aws_eks_cluster_auth : Get an authentication token to communicate with an EKS cluster.
 
 Inputs:
 =======
