@@ -32,12 +32,14 @@ Inputs:
 =======
 provider aws:-
 region : AWS Region in which EKS Cluster is planned create.
+_____________________________________________________________
 module eks:-
 1 cluster_name:	Name of the EKS cluster
 2 cluster_version: 	Kubernetes <major>.<minor> version to use for the EKS cluster (i.e.: 1.21)
 3 eks_managed_node_groups: 	Map of EKS managed node group definitions to create
 4 subnet_ids:	A list of subnet IDs where the EKS cluster (ENIs) will be provisioned along with the nodes/node groups.
-5 vpc_id:	ID of the VPC where the cluster and its nodes will be provisioned  
+5 vpc_id:	ID of the VPC where the cluster and its nodes will be provisioned
+______________________________________________________________
 module vpc:-
 1. azs:	A list of availability zones names or ids in the region
 2. cidr:	The CIDR block for the VPC
